@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    @apply text-[#B2A4FF] border-b-2 border-[#AA77FF] border-t-4 py-2 font-bold
+}
+
+.container{
+    @apply max-w-[1240px] mx-auto 
+}
+
+.td-class {
+    @apply px-4 py-3 text-gray-900 bg-gray-200 first:rounded-tl-lg first:rounded-bl-lg last:rounded-tr-lg last:rounded-br-lg
+  }

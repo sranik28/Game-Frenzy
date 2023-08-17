@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
+/* .active{
     @apply text-[#B2A4FF] border-b-2 border-[#AA77FF] border-t-4 py-2 font-bold
-}
+} */
 
 .container{
     @apply max-w-[1240px] mx-auto 
@@ -13,3 +13,35 @@
 .td-class {
     @apply px-4 py-3 text-gray-900 bg-gray-200 first:rounded-tl-lg first:rounded-bl-lg last:rounded-tr-lg last:rounded-br-lg
   }
+
+  .active {
+    /* font-size: 18px; */
+    /* font-weight: 700; */
+    /* letter-spacing: 2px; */
+    color: #B2A4FF;
+    /* text-transform: uppercase; */
+    transition: all linear 0.3s;
+    position: relative;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.active::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 2px;
+    background-color: #B2A4FF;
+    transform: rotate(-45deg);
+    transition: all linear 0.3s;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
